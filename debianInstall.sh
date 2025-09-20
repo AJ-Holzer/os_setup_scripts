@@ -13,6 +13,8 @@ sudo snap install --classic code                                                
 sudo snap install opera                                                                            # Opera
 sudo snap install bitwarden                                                                        # BitWarden
 sudo snap install spotify                                                                          # Spotify
+curl -fsSL https://raw.githubusercontent.com/spicetify/cli/main/install.sh | sh                    # Spicetify
+curl -fsSL https://raw.githubusercontent.com/spicetify/marketplace/main/resources/install.sh | sh  # Spicetify marketplace
 sudo snap install discord                                                                          # Discord
 curl -fsSL https://ollama.com/install.sh | sh                                                      # Ollama
 sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"  # Vencord

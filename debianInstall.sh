@@ -12,6 +12,7 @@ sudo apt install git -y                                                         
 sudo snap install --classic code                                                                   # VSCode
 sudo snap install opera                                                                            # Opera
 sudo snap install bitwarden                                                                        # BitWarden
+sudo snap install spotify                                                                          # Spotify
 sudo snap install discord                                                                          # Discord
 curl -fsSL https://ollama.com/install.sh | sh                                                      # Ollama
 sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"  # Vencord

@@ -6,6 +6,9 @@ sudo apt update
 # Install Snap
 sudo apt install snapd -y
 
+# Install curl
+sudo apt install curl -y
+
 
 # Install basic programs
 sudo apt install git -y                                                                            # Git

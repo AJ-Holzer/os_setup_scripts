@@ -1,8 +1,8 @@
 # OS Setup Scripts
 
-| File                         | OS         | Included | SHA-256 |
-| ---------------------------- | ---------- | -------- | ------- |
-| [kde_plasma.sh](#kde-plasma) | KDE Plasma | --       | --      |
+| File                           | OS         | Included | SHA-256 |
+| ------------------------------ | ---------- | -------- | ------- |
+| [ubuntu/24.04/kde_plasma.sh]() | KDE Plasma | --       | --      |
 
 ## KDE Plasma
 

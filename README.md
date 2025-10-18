@@ -29,5 +29,5 @@ Verify if the SHA-256 hash matches the above one.
 sudo chmod +x kde_plasma.sh
 
 # Start setup
-bash kde_plasma.sh
+sudo bash kde_plasma.sh
 ```

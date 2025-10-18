@@ -10,12 +10,10 @@ set -euo pipefail
 
 # Update
 apt update
-# apt upgrade
-# pkcon update
 
 # Install snap and Flatpak
 echo "🟢 Installing Snap..."
-apt install -y snap
+apt install -y snapd
 echo "🟢 Installing Flatpak..."
 apt install -y flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
@@ -40,6 +38,7 @@ fi
 echo "🟢 Installing Spotify..."
 curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
 echo "deb https://repository.spotify.com stable non-free" | tee /etc/apt/sources.list.d/spotify.list
+apt update
 apt-get install spotify-client
 spotify
 read -n 1 -s -r -p "🟠 Please login to spotify and press any key to continue..."
@@ -50,7 +49,8 @@ wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signa
 cat signal-desktop-keyring.gpg | tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
 wget -O signal-desktop.sources https://updates.signal.org/static/desktop/apt/signal-desktop.sources;
 cat signal-desktop.sources | tee /etc/apt/sources.list.d/signal-desktop.sources > /dev/null
-apt update && apt install signal-desktop
+apt update
+apt install signal-desktop
 
 # Discord
 flatpak install -y flathub com.discordapp.Discord
@@ -68,6 +68,7 @@ echo "🟢 Installing Brave..."
 curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" | \
     tee /etc/apt/sources.list.d/brave-browser-release.list
+apt update
 apt install -y brave-browser
 
 

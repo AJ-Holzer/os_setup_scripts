@@ -62,4 +62,6 @@ mkdir -p ~/.config/backup_shortcuts
 sudo cp ~/.config/kglobalshortcutsrc ~/.config/backup_shortcuts/kglobalshortcutsrc.bak
 
 # Import shortcuts
-curl -sS 
+curl -sS "https://raw.githubusercontent.com/AJ-Holzer/os_setup_scripts/refs/heads/main/ubuntu/24.04/shortcut_config.kksrc" > ~/.config/kglobalshortcutsrc
+
+

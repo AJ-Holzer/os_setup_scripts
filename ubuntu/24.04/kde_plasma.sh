@@ -54,3 +54,12 @@ sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://b
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" | \
     sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt install -y brave-browser
+
+
+# === Shortcuts ===
+# Back up shortcut file
+mkdir -p ~/.config/backup_shortcuts
+sudo cp ~/.config/kglobalshortcutsrc ~/.config/backup_shortcuts/kglobalshortcutsrc.bak
+
+# Import shortcuts
+curl -sS 

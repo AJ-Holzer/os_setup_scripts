@@ -1,8 +1,8 @@
 # OS Setup Scripts
 
-| File                                                                                                             | OS         | Included | SHA-256                                                          |
-| ---------------------------------------------------------------------------------------------------------------- | ---------- | -------- | ---------------------------------------------------------------- |
-| [ubuntu/24.04/kde_plasma.sh](https://github.com/AJ-Holzer/os_setup_scripts/blob/main/ubuntu/24.04/kde_plasma.sh) | KDE Plasma | --       | b752c5dc431244440cf76a1e75eaed55d16efa2e17e73ebf5979e5104bcda7b5 |
+| File                                                                                                             | OS         | Included |
+| ---------------------------------------------------------------------------------------------------------------- | ---------- | -------- |
+| [ubuntu/24.04/kde_plasma.sh](https://github.com/AJ-Holzer/os_setup_scripts/blob/main/ubuntu/24.04/kde_plasma.sh) | KDE Plasma | --       |
 
 ## KDE Plasma
 
@@ -20,7 +20,7 @@ curl -fsSL "https://raw.githubusercontent.com/AJ-Holzer/os_setup_scripts/refs/he
 sha256sum kde_plasma.sh
 ```
 
-Verify if the SHA-256 hash matches the above one.
+Verify if the SHA-256 hash matches `b752c5dc431244440cf76a1e75eaed55d16efa2e17e73ebf5979e5104bcda7b5`.
 
 #### Start Setup
 

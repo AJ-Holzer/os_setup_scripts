@@ -6,7 +6,9 @@ sudo apt update
 sudo apt upgrade
 
 # Install snap and Flatpak
+echo "Installing Snap..."
 sudo apt install -y snap
+echo "Installing Flatpak..."
 sudo apt install -y flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
@@ -27,11 +29,13 @@ fi
 
 # === Install programs ===
 # Install Spotify
+echo "Installing Spotify..."
 curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
 echo "deb https://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 sudo apt-get install spotify-client
 
 # Install Signal
+echo "Installing Signal..."
 wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg;
 cat signal-desktop-keyring.gpg | sudo tee /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
 wget -O signal-desktop.sources https://updates.signal.org/static/desktop/apt/signal-desktop.sources;
@@ -41,7 +45,8 @@ sudo apt update && sudo apt install signal-desktop
 # Discord
 flatpak install -y flathub com.discordapp.Discord
 
-# VS-Code
+# VSCode
+echo "Installing VSCode..."
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /usr/share/keyrings/microsoft.gpg > /dev/null
 echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | \
     sudo tee /etc/apt/sources.list.d/vscode.list
@@ -49,8 +54,8 @@ sudo apt update
 sudo apt install -y code
 
 # Brave
+echo "Installing Brave..."
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-
 echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main" | \
     sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt install -y brave-browser
@@ -58,10 +63,12 @@ sudo apt install -y brave-browser
 
 # === Shortcuts ===
 # Back up shortcut file
+echo "Backing up global shortcuts..."
 mkdir -p ~/.config/backup_shortcuts
 sudo cp ~/.config/kglobalshortcutsrc ~/.config/backup_shortcuts/kglobalshortcutsrc.bak
 
 # Import shortcuts
+echo "Overwriting global shortcuts..."
 curl -sS "https://raw.githubusercontent.com/AJ-Holzer/os_setup_scripts/refs/heads/main/ubuntu/24.04/shortcut_config.kksrc" > ~/.config/kglobalshortcutsrc
 
 

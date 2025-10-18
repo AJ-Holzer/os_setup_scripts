@@ -1,8 +1,8 @@
 # OS Setup Scripts
 
-| File                                                                                                             | OS         | Included                                                            |
-| ---------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------------------------------------------- |
-| [ubuntu/24.04/kde_plasma.sh](https://github.com/AJ-Holzer/os_setup_scripts/blob/main/ubuntu/24.04/kde_plasma.sh) | KDE Plasma | - Wayland -> X11<br>- Signal<br>- Discord<br>- Spotify<br>- VS-Code |
+| File                                                                                                             | OS         | Included                                                                                                |
+| ---------------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------- |
+| [ubuntu/24.04/kde_plasma.sh](https://github.com/AJ-Holzer/os_setup_scripts/blob/main/ubuntu/24.04/kde_plasma.sh) | KDE Plasma | **Desktop:**<br>- Wayland ⮕ X11<br><br>**Programs:**<br>- Signal<br>- Discord<br>- Spotify<br>- VS-Code |
 
 ## KDE Plasma
 

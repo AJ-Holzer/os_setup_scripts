@@ -20,7 +20,7 @@ curl -fsSL "https://raw.githubusercontent.com/AJ-Holzer/os_setup_scripts/refs/he
 sha256sum kde_plasma.sh
 ```
 
-Verify that the output hash matches this SHA-256 hash: `5118a1bc20742a24ab2ecfaaf58925f85ae816e88073370e88f473bd6cb63e81`
+Verify that the output hash matches this SHA-256 hash: `bbdb32f8c9265a7ae220540dd82578a88c406e1c871e034a7e29e761f9845a59`
 
 #### Start Setup
 

@@ -47,4 +47,3 @@ echo "deb [arch=amd64 signed-by=/usr/share/keyrings/microsoft.gpg] https://packa
     sudo tee /etc/apt/sources.list.d/vscode.list
 sudo apt update
 sudo apt install -y code
-
